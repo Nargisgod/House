@@ -21,9 +21,16 @@ class ExampleWindow: public Window
 protected:
 	double _angle { 0. };
 	double _camera_z { 0. };
+	double z1 { -0.7 };
+	double z2 { -0.05 };
+	double z3 { 0.6 };
+	double z_carrot { 0.65};
 
 	SimpleModel _cube = SimpleModel::create_cube();
 	Texture _crate_texture;
+	Texture _snowman_texture;
+	Texture _tree_texture;
+	Texture _carrot_texture;
 	Ground _ground = Ground::create_ground();
 
 public:
